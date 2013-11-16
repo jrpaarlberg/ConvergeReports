@@ -19,8 +19,45 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3><strong>Converge Report using Production
+            <h3><strong>Converge Report using TR Dev2
                 Data</strong></h3>
+             <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">Sales Order - All</td>
+                    <td><a href="http://tr-converge/ConvergeReports/SalesOrderViewer.aspx?sales_ord_id=50983&Items=all" target="new"/>Sales Order - All</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Sales Order Open</td>
+                    <td><a href="http://tr-converge/ConvergeReports/SalesOrderViewer.aspx?sales_ord_id=50983&Items=open" target="new"/>Sales Order - Open</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Sales Commission </td>
+                    <td><a href="http://tr-converge/ConvergeReports/SalesCommission.aspx" target="new">Sales Commission</a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Sales Analyis - Customer</td>
+                    <td> <a href="http://tr-converge/ConvergeReports/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=Sum&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013" target="new">Sales Analysis</a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Sales Analyis - Item </td>
+                    <td><a href="http://tr-converge/ConvergeReports/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=DetItm&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013" target="new">Sales Analysis</a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Sales Analyis - Invoice </td>
+                    <td><a href="http://tr-converge/ConvergeReports/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=DetInv&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013"" target="new">Sales Analysis</a></td>
+                </tr>
+
+      
+                <tr>
+                    <td class="auto-style2">Customer Address</td>
+                    <td> <a href="http://tr-converge/ConvergeReports/ReportViewer.aspx" target="new">Customer Address</a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Purchase Order </td>
+                    <td> <a href="http://tr-converge/ConvergeReports/PurchaseViewer.aspx?rpt_nm=PurchaseOrder&po_id=11929&Items=all" target="new">Purchase Order</a></td>
+                </tr>
+            </table>
+
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">Sales Order - All</td>
