@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
     <div>
         
-        <telerik:ReportViewer ID="ReportViewer1" height=1000 width=800 runat="server"></telerik:ReportViewer>
+        <telerik:ReportViewer ID="ReportViewer1" height=1000 width=900 runat="server"></telerik:ReportViewer>
     </div>
     </form>
 </body>
