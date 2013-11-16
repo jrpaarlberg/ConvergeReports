@@ -19,7 +19,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h3><strong>Converge Report using TR Dev2
+            <h3><strong>Converge Report using TR Converge
                 Data</strong></h3>
              <table class="auto-style1">
                 <tr>
