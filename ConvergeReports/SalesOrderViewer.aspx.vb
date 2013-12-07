@@ -7,18 +7,16 @@
             'instanceReportSource.ReportDocument = New CustomerAddress.CustomerAddress()
             'Items = all
             Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
-
-
-            If Len(Request.QueryString("Items").ToString) > 0 Then
-                If Request.QueryString("Items").Equals("all") Then
-                    instanceReportSource.ReportDocument = New ClassSalesOrderAll.Report1()
-                Else
-                    instanceReportSource.ReportDocument = New ClassSalesOrder.Report1()
-
+            instanceReportSource.ReportDocument = New ClassSalesOrder.Report1()
+            
+            If Len(Request.QueryString("items").ToString) > 0 Then
+                Dim strItemFlag As Boolean = True
+                If Request.QueryString("items").Equals("all") Then
+                    strItemFlag = False
                 End If
-            Else
-                instanceReportSource.ReportDocument = New ClassSalesOrderAll.Report1()
+                instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("FlagOpen", strItemFlag))
             End If
+
 
             'Dim instanceReportSource1 As New Telerik.Reporting.InstanceReportSource()
 

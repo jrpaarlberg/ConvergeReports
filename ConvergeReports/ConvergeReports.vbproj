@@ -79,6 +79,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -122,6 +123,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SalesViewer.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="ReportViewer.aspx" />
     <Content Include="SalesAnalysis.aspx" />
@@ -151,6 +153,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SalesViewer.aspx.designer.vb">
+      <DependentUpon>SalesViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesViewer.aspx.vb">
+      <DependentUpon>SalesViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Reports.aspx.designer.vb">
       <DependentUpon>Reports.aspx</DependentUpon>
@@ -230,6 +239,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ObjectReport\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

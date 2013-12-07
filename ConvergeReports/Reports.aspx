@@ -81,7 +81,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">Sales Analyis - Invoice </td>
-                    <td><a href="http://tr-dev2:82/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=DetInv&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013"" target="new">Sales Analysis</a></td>
+                    <td><a href="http://tr-dev2:82/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=DetInv&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013" target="new">Sales Analysis</a></td>
                 </tr>
 
       
@@ -110,7 +110,7 @@
         <a href="http://localhost:59742/SalesAnalysisGroup.aspx?sales_rep_nbr=JPB&GroupBy=DetInv&cust_id=1424&start_dt=10/1/2013&end_dt=10/10/2013" target="new">Sales Analysis - Group By Invoice</a><br />
         <br />
      
-        <a href="http://localhost:59742/SalesCommission.aspx" target="new">Sales Commission</a><br />
+        <a href="http://localhost:59742/SalesCommission.aspx?sales_rep_nbr=JPB&start_dt=10/1/2013&end_dt=10/10/2013" target="new">Sales Commission</a><br />
         <br />
         <a href="http://localhost:59742/SalesOrderViewer.aspx?sales_ord_id=52084&Items=open" target="new">Sales Order - Open</a>
         <br />

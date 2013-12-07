@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="PurchaseViewer.aspx.vb" Inherits="ConvergeReports.WebForm1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="SalesViewer.aspx.vb" Inherits="ConvergeReports.WebForm1" %>
 
 <%@ Register Assembly="Telerik.ReportViewer.WebForms, Version=7.2.13.1016, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.ReportViewer.WebForms" TagPrefix="telerik" %>
 
@@ -12,8 +12,8 @@
     <form id="form1" runat="server">
     <div>
         
+        <telerik:ReportViewer ID="ReportViewer1" height=1000 width=900 runat="server"></telerik:ReportViewer>
     </div>
-        <telerik:ReportViewer ID="ReportViewer1" runat="server" Height="541px" Width="1323px"></telerik:ReportViewer>
     </form>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿Public Class PurchaseViewer
+﻿Public Class WebForm1
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -11,9 +11,9 @@
             'po_id=11929
 
 
-
-
-
+         
+          
+         
 
             If Len(Request.QueryString("rpt_nm").ToString) > 0 Then
 
@@ -40,33 +40,33 @@
                 End Select
             End If
 
-            If strReportPrint.Equals("Y") Then
-                'ReportViewer1.ReportSource = instanceReportSource
-                'ReportViewer1.RefreshReport()
+                If strReportPrint.Equals("Y") Then
+                    ReportViewer1.ReportSource = instanceReportSource
+                    ReportViewer1.RefreshReport()
+                End If
+
+
+                'Dim instanceReportSource1 As New Telerik.Reporting.InstanceReportSource()
+
+                ' Assigning the Report object to the InstanceReportSource
+                'instanceReportSource1.ReportDocument = New ClassSalesOrder.SOitems()
+
+                'instantiate the master report
+
+                'InstanceReportSource irs = sr.ReportSource as InstanceReportSource;
+                '                    if (irs != null)
+                '                      Report rsd = irs.ReportDocument as Report;
+                '                       if (rsd != null)
+                '                        rsd.DataSource = dataList;
+
+                '= New ClassSalesOrder.SOitems()
+
+                'set it's report source to a new InstanceReportSource with the report document that you have already instantiated above
+                'subRepItem.ReportSource = new InstanceReportSource { ReportDocument = subReport };
+                'display the master report in the viewer
+                'this.ReportViewer1.ReportSource = new InstanceReportSource { ReportDocument = masterReport };
+
             End If
-
-
-            'Dim instanceReportSource1 As New Telerik.Reporting.InstanceReportSource()
-
-            ' Assigning the Report object to the InstanceReportSource
-            'instanceReportSource1.ReportDocument = New ClassSalesOrder.SOitems()
-
-            'instantiate the master report
-
-            'InstanceReportSource irs = sr.ReportSource as InstanceReportSource;
-            '                    if (irs != null)
-            '                      Report rsd = irs.ReportDocument as Report;
-            '                       if (rsd != null)
-            '                        rsd.DataSource = dataList;
-
-            '= New ClassSalesOrder.SOitems()
-
-            'set it's report source to a new InstanceReportSource with the report document that you have already instantiated above
-            'subRepItem.ReportSource = new InstanceReportSource { ReportDocument = subReport };
-            'display the master report in the viewer
-            'this.ReportViewer1.ReportSource = new InstanceReportSource { ReportDocument = masterReport };
-
-        End If
     End Sub
 
 End Class
