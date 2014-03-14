@@ -8,13 +8,13 @@
             'Items = all
             Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
             instanceReportSource.ReportDocument = New ClassSalesOrder.Report1()
-            
-            If Len(Request.QueryString("items").ToString) > 0 Then
+            '&Items=open
+            If Len(Request.QueryString("Items").ToString) > 0 Then
                 Dim strItemFlag As Boolean = True
-                If Request.QueryString("items").Equals("all") Then
+                If Request.QueryString("Items").Equals("all") Then
                     strItemFlag = False
                 End If
-                instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("FlagOpen", strItemFlag))
+                instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OpenFlag", strItemFlag))
             End If
 
 

@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SalesAnalysis
+Partial Public Class WebForm3
 
     '''<summary>
     '''form1 control.

@@ -16,7 +16,7 @@
     <div>
     
     </div>
-        <telerik:ReportViewer ID="ReportViewer1" runat="server" Height="1000px" Width="1000px">
+        <telerik:ReportViewer ID="ReportViewer1" runat="server" Height="1000px" Width="1300px">
 <typereportsource typename="ClassSalesAnalysis.Report1, ClassSalesAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"></typereportsource>
 </telerik:ReportViewer>
     </form>

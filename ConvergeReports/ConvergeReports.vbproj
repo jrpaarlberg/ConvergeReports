@@ -40,9 +40,8 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClassSalesAnalysis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ClassSalesAnalysis2\ClassSalesAnalysis\bin\Debug\ClassSalesAnalysis.dll</HintPath>
+    <Reference Include="ClassLotLabels">
+      <HintPath>..\..\..\..\Visual Studio 2013\Projects\ClassLotLabels\ClassLotLabels\bin\Debug\ClassLotLabels.dll</HintPath>
     </Reference>
     <Reference Include="ClassSalesAnalysisInvoice">
       <HintPath>..\..\ClassSalesAnalysisInvoice\ClassSalesAnalysisInvoice\bin\Debug\ClassSalesAnalysisInvoice.dll</HintPath>
@@ -53,14 +52,12 @@
     <Reference Include="ClassSalesAnalysisSummary">
       <HintPath>..\..\ClassSalesAnalysisSummary\ClassSalesAnalysisSummary\bin\Debug\ClassSalesAnalysisSummary.dll</HintPath>
     </Reference>
-    <Reference Include="ClassSalesCommission">
-      <HintPath>..\..\ClassSalesCommission\ClassSalesCommission\bin\Debug\ClassSalesCommission.dll</HintPath>
+    <Reference Include="ClassSalesCommission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ClassSalesCommission\ClassSalesCommission\bin\Release\ClassSalesCommission.dll</HintPath>
     </Reference>
     <Reference Include="ClassSalesOrder">
       <HintPath>..\..\ClassSalesOrder\ClassSalesOrder\obj\Debug\ClassSalesOrder.dll</HintPath>
-    </Reference>
-    <Reference Include="ClassSalesOrderAll">
-      <HintPath>..\..\ClassSalesOrderAll\ClassSalesOrderAll\bin\Debug\ClassSalesOrderAll.dll</HintPath>
     </Reference>
     <Reference Include="ClassTimcoReports">
       <HintPath>..\..\ClassTimcoReports\ClassTimcoReports\bin\Debug\ClassTimcoReports.dll</HintPath>
@@ -126,12 +123,15 @@
     <Content Include="SalesViewer.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="ReportViewer.aspx" />
-    <Content Include="SalesAnalysis.aspx" />
     <Content Include="SalesAnalysisGroup.aspx" />
     <Content Include="SalesCommission.aspx" />
     <Content Include="SalesOrderViewer.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="PurchaseViewer.aspx" />
+    <Content Include="PackList.aspx" />
+    <Content Include="Labels.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListBoundReport.vb" />
@@ -154,6 +154,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ReportObjects\LotTest.vb" />
     <Compile Include="SalesViewer.aspx.designer.vb">
       <DependentUpon>SalesViewer.aspx</DependentUpon>
     </Compile>
@@ -173,13 +174,6 @@
     </Compile>
     <Compile Include="ReportViewer.aspx.vb">
       <DependentUpon>ReportViewer.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="SalesAnalysis.aspx.designer.vb">
-      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SalesAnalysis.aspx.vb">
-      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="SalesAnalysisGroup.aspx.designer.vb">
@@ -208,6 +202,20 @@
     </Compile>
     <Compile Include="PurchaseViewer.aspx.vb">
       <DependentUpon>PurchaseViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PackList.aspx.designer.vb">
+      <DependentUpon>PackList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackList.aspx.vb">
+      <DependentUpon>PackList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Labels.aspx.designer.vb">
+      <DependentUpon>Labels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Labels.aspx.vb">
+      <DependentUpon>Labels.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

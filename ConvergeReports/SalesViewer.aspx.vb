@@ -33,7 +33,8 @@
                                 instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("FlagOpen", strItemFlag))
                             End If
                         End If
-
+                    Case "OpenPurchaseOrder"
+                        instanceReportSource.ReportDocument = New ClassTimcoReports.Open_Purchase()
                     Case Else
                         strReportPrint = "N"
 

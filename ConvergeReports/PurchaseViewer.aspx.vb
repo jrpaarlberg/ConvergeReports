@@ -9,12 +9,7 @@
             Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
             Dim strReportPrint As String = "Y"
             'po_id=11929
-
-
-
-
-
-
+            ' Currently Calling Sales Viewer 
             If Len(Request.QueryString("rpt_nm").ToString) > 0 Then
 
                 Select Case Request.QueryString("rpt_nm")
@@ -33,7 +28,8 @@
                                 instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("FlagOpen", strItemFlag))
                             End If
                         End If
-
+                    Case "OpenPurchaseOrder"
+                        instanceReportSource.ReportDocument = New ClassTimcoReports.Open_Purchase()
                     Case Else
                         strReportPrint = "N"
 
@@ -46,26 +42,7 @@
             End If
 
 
-            'Dim instanceReportSource1 As New Telerik.Reporting.InstanceReportSource()
-
-            ' Assigning the Report object to the InstanceReportSource
-            'instanceReportSource1.ReportDocument = New ClassSalesOrder.SOitems()
-
-            'instantiate the master report
-
-            'InstanceReportSource irs = sr.ReportSource as InstanceReportSource;
-            '                    if (irs != null)
-            '                      Report rsd = irs.ReportDocument as Report;
-            '                       if (rsd != null)
-            '                        rsd.DataSource = dataList;
-
-            '= New ClassSalesOrder.SOitems()
-
-            'set it's report source to a new InstanceReportSource with the report document that you have already instantiated above
-            'subRepItem.ReportSource = new InstanceReportSource { ReportDocument = subReport };
-            'display the master report in the viewer
-            'this.ReportViewer1.ReportSource = new InstanceReportSource { ReportDocument = masterReport };
-
+          
         End If
     End Sub
 

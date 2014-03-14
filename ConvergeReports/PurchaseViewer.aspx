@@ -6,6 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div>
         
     </div>
-        <telerik:ReportViewer ID="ReportViewer1" runat="server" Height="541px" Width="1323px"></telerik:ReportViewer>
+        <telerik:ReportViewer ID="ReportViewer1" runat="server" Height="541px" Width="1100px"></telerik:ReportViewer>
     </form>
 </body>
 </html>
